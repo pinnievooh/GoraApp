@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Найдин Александр</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Заявка на стажировку">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript, ЦВТ, Центр Высоких технологий, Ижевск">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="js/localstorage.js"></script>
+        <script src='js/main.js'></script>
+    </head>
+    <body>
+        <main role="main">
+            <div class="wrapper">
+                <input id="me_btn" type="button" class="button_tabs button_white" value="Профиль">
+                <input id="friend_btn" type="button" class="button_tabs button_blue" value="Друзья пользователя">
+            <div class="container">
+                <div class="inbox" id="scroll">
+                    <section id="home_page">
+                        <div class="inbox_left">
+                                <img src="images/avatar1.png" alt="avatar" class="user_photo" /><br>
+                                <input type="button" class="button_orange" value="Добавить в друзья">
+                        </div>
+                        <div class="inbox_right">
+                            <p><span id="name">Виталя Гора</span></p>
+                            <input type="text" id="user_name_new" />
+                            <p class="user_city"> г. Нижние Шахты</p>
+                            <div class="user_info">
+                                <div class="user_info_questions">
+                                    <p>Семейное положение</p>
+                                    <p>Телефон</p>
+                                    <p>E-mail</p>
+                                </div>
+                                <div class="user_info_answers">
+                                    <p><span id="sp" class="info">холост</span></p>
+                                    <p><span id="phone" class="info">+7 (440) 554-32-15</span></p>
+                                    <p><span id="mail" class="info link">vitalya@gora.ru</span></p>
+                                </div>
+                                <div class="user_interests">
+                                    <p>Интересы</p>
+                                    <div id="my_interests"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="friends_page" class="layer">
+
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/lev.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Лев Бронштейн</p>
+                                <p class="city">г. Ханты-Мансийск</p><br>
+                                <p class="online">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/nahodka.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Находка Капитал</p>
+                                <p class="city">г. Усть-Бельск</p><br>
+                                <p class="online"></p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/yandex.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Яндекс Петренко</p>
+                                <p class="city">г. Пермь</p><br>
+                                <p class="online"></p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/uspeh.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Успех Возможностей</p>
+                                <p class="city">г. Радонеж</p><br>
+                                <p class="online">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/inna.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Ирина Нашлась</p>
+                                <p class="city">г. Омск</p><br>
+                                <p class="online">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/alla.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Алла Подольская</p>
+                                <p class="city">г. Петропавловск-камчатский</p>
+                                <p class="online long">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/lev.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Лев Бронштейн</p>
+                                <p class="city">г. Ханты-Мансийск</p><br>
+                                <p class="online">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/nahodka.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Находка Капитал</p>
+                                <p class="city">г. Усть-Бельск</p><br>
+                                <p class="online"></p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/yandex.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Яндекс Петренко</p>
+                                <p class="city">г. Пермь</p><br>
+                                <p class="online"></p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/uspeh.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Успех Возможностей</p>
+                                <p class="city">г. Радонеж</p><br>
+                                <p class="online">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/inna.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Ирина Нашлась</p>
+                                <p class="city">г. Омск</p><br>
+                                <p class="online">Online</p>
+                            </div>
+                        </div>
+                        <div class="friend_list">
+                            <div class="inbox_left">
+                                <img src="images/alla.png" />
+                            </div>
+                            <div class="inbox_right_friends">
+                                <p class="link name_friends">Алла Подольская</p>
+                                <p class="city">г. Петропавловск-камчатский</p>
+                                <p class="online long">Online</p>
+                            </div>
+                        </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="interest">
+                    <input type="text" id="user_interests_new" placeholder="Ваш новый интерес"/>
+                    <input type="button" id="user_interests_new_button" class="button_orange" value="Добавить интерес"><br>
+                    <span class="error">Допускается длина строки от 2 до 20 символов!</span>
+                </div>
+            </div>    
+        </main>
+    </body>
+</html>
